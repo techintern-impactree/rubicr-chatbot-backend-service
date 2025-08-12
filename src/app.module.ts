@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config'; // Import ConfigModule
+import { ConfigModule } from '@nestjs/config'; 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true, // Makes environment variables accessible throughout the app
+      isGlobal: true, 
     }),
   ],
   controllers: [AppController],
